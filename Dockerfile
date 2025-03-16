@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . .
 
 # Installer les dépendances
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r app/requirements.txt
+
 
 # Exécuter les tests avec pytest
 CMD ["pytest"]
